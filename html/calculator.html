@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <!-- IE -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 取消 safari 電話連結 -->
+    <meta name="format-detection" content="telephone=no">
+
+    <title>兆豐票券 | 試算器</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+
+    <!-- normalize --> 
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- select2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- ckeditor -->
+    <link rel="stylesheet" type="text/css" media="all" href="css/page.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+</head>
+
+<body>
+    <!-- wrapper START -->
+    <div class="wrapper">
+        <!-- header START -->
+        <header>
+            <div class="logo">
+                <a href="/">
+                    <img src="img/MegaLogo.png" alt="">
+                </a>
+            </div>
+            <nav class="nav_wrap">
+                <ul class="nav_list">
+                    <li class="nav_list__item">
+                        關於我們
+                        <ul class="sub_list">
+                            <li class="sub_list__item"><a href="/about.html">關於兆票</a></li>
+                            <li class="sub_list__item"><a href="/location.html">服務據點</a></li>
+                            <li class="sub_list__item"><a href="/recruiting.html">人才招募</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_list__item">
+                        動態消息
+                        <ul class="sub_list">
+                            <li class="sub_list__item"><a href="/market.html">市場行情</a></li>
+                            <li class="sub_list__item"><a href="/news_list.html">公司訊息</a></li>
+                            <li class="sub_list__item"><a href="/propaganda_list.html">政策宣導</a></li>
+                            <li class="sub_list__item"><a href="/links.html">友善連結</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_list__item">
+                        牌告利率
+                        <ul class="sub_list">
+                            <li class="sub_list__item"><a href="/NTD_quotation.html">新台幣利率報價</a></li>
+                            <li class="sub_list__item"><a href="/foreign_quotation.html">外幣利率報價</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_list__item">
+                        金融情勢
+                        <ul class="sub_list">
+                            <li class="sub_list__item"><a href="/situation_research.html">資金情勢研判</a></li>
+                            <li class="sub_list__item"><a href="/financial_information.html">金融資訊</a></li>
+                            <li class="sub_list__item"><a href="/encyclopedia.html">貨幣市場小百科</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_list__item">
+                        業務簡介
+                        <ul class="sub_list">
+                            <li class="sub_list__item"><a href="/tools.html">交易工具介紹</a></li>
+                            <li class="sub_list__item"><a href="/bonds.html">票券及債券買賣</a></li>
+                            <li class="sub_list__item"><a href="/promissory_note.html">發行融資性商業本票</a></li>
+                            <li class="sub_list__item"><a href="/acceptance_bill.html">買入發行銀行承兌匯票及商業承兌匯票</a></li>
+                            <li class="sub_list__item"><a href="/commercial_paper.html">買入中心工廠票券交易性商業本票</a></li>
+                            <li class="sub_list__item"><a href="/invest_foreign.html">投資外幣票券及債券</a></li>
+                            <li class="sub_list__item"><a href="/calculator.html">試算器</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_list__item">
+                        法定公開揭露
+                        <ul class="sub_list">
+                            <li class="sub_list__item"><a href="/governance.html">公司治理</a></li>
+                            <li class="sub_list__item"><a href="/financial_report.html">財務報告</a></li>
+                            <li class="sub_list__item"><a href="/annual_report.html">年報</a></li>
+                            <li class="sub_list__item"><a href="/credit_rating.html">信用評等資訊</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_list__item">
+                        永續發展
+                        <ul class="sub_list">
+                            <li class="sub_list__item"><a href="/policies_norms_list.html">政策及規範</a></li>
+                            <li class="sub_list__item"><a href="/situation_list.html">年度執行情形</a></li>
+                            <li class="sub_list__item"><a href="/due_diligence.html">機構投資人盡職治理</a></li>
+                            <li class="sub_list__item"><a href="/stakeholders.html">利害關係人溝通</a></li>
+                            <li class="sub_list__item"><a href="/responsibility.html">報告書</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="lang">
+                <a href="/aboutus.html">
+                    EN
+                </a>
+            </div>
+            <div class="header_right_m">
+         <div class="lang_m">
+                    <a href="/aboutus.html">
+                        English
+                    </a>
+                </div>
+                <div class="hamburger">
+                    <div class="burger burger-squeeze">
+                        <div class="burger-lines"></div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!-- header END -->
+
+        <!-- 手機板選單 START -->
+        <nav class="sub_nav">
+            <ul class="nav_list">
+                <li class="nav_list__item">
+                    <p>關於我們</p>
+                    <ul class="sub_list">
+                        <li class="sub_list__item"><a href="/about.html">關於兆票</a></li>
+                        <li class="sub_list__item"><a href="/location.html">服務據點</a></li>
+                        <li class="sub_list__item"><a href="/recruiting.html">人才招募</a></li>
+                    </ul>
+  
+                </li>
+                <li class="nav_list__item">
+                    <p>動態消息</p> 
+                    <ul class="sub_list">
+                        <li class="sub_list__item"><a href="/market.html">市場行情</a></li>
+                        <li class="sub_list__item"><a href="/news_list.html">公司訊息</a></li>
+                        <li class="sub_list__item"><a href="/propaganda_list.html">政策宣導</a></li>
+                        <li class="sub_list__item"><a href="/links.html">友善連結</a></li>
+                    </ul>
+                </li>
+                <li class="nav_list__item">
+                    <p>牌告利率</p> 
+                    <ul class="sub_list">
+                        <li class="sub_list__item"><a href="/NTD_quotation.html">新台幣利率報價</a></li>
+                        <li class="sub_list__item"><a href="/foreign_quotation.html">外幣利率報價</a></li>
+                    </ul>
+                </li>
+                <li class="nav_list__item">
+                    <p>金融情勢</p>  
+                    <ul class="sub_list">
+                        <li class="sub_list__item"><a href="/situation_research.html">資金情勢研判</a></li>
+                        <li class="sub_list__item"><a href="/financial_information.html">金融資訊</a></li>
+                        <li class="sub_list__item"><a href="/encyclopedia.html">貨幣市場小百科</a></li>
+                    </ul>
+                </li>
+                <li class="nav_list__item">
+                    <p>業務簡介</p>  
+                    <ul class="sub_list">
+                        <li class="sub_list__item"><a href="/tools.html">交易工具介紹</a></li>
+                        <li class="sub_list__item"><a href="/bonds.html">票券及債券買賣</a></li>
+                        <li class="sub_list__item"><a href="/promissory_note.html">發行融資性商業本票</a></li>
+                        <li class="sub_list__item"><a href="/acceptance_bill.html">買入發行銀行承兌匯票及商業承兌匯票</a></li>
+                        <li class="sub_list__item"><a href="/commercial_paper.html">買入中心工廠票券交易性商業本票</a></li>
+                        <li class="sub_list__item"><a href="/invest_foreign.html">投資外幣票券及債券</a></li>
+                        <li class="sub_list__item"><a href="/calculator.html">試算器</a></li>
+                    </ul>
+                </li>
+                <li class="nav_list__item">
+                    <p>法定公開揭露</p>  
+                    <ul class="sub_list">
+                        <li class="sub_list__item"><a href="/governance.html">公司治理</a></li>
+                        <li class="sub_list__item"><a href="/financial_report.html">財務報告</a></li>
+                        <li class="sub_list__item"><a href="/annual_report.html">年報</a></li>
+                        <li class="sub_list__item"><a href="/credit_rating.html">信用評等資訊</a></li>
+                    </ul>
+                </li>
+                <li class="nav_list__item">
+                    <p>永續發展</p>   
+                    <ul class="sub_list">
+                        <li class="sub_list__item"><a href="/policies_norms_list.html">政策及規範</a></li>
+                        <li class="sub_list__item"><a href="/situation_list.html">年度執行情形</a></li>
+                        <li class="sub_list__item"><a href="/due_diligence.html">機構投資人盡職治理</a></li>
+                        <li class="sub_list__item"><a href="/stakeholders.html">利害關係人溝通</a></li>
+                        <li class="sub_list__item"><a href="/responsibility.html">報告書</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- 手機板選單 START -->
+
+        <!-- banner START -->
+        <div class="pg_banner black_cover">
+            <h1 class="text-white">試算器</h1>
+            <picture>
+                <source media="(min-width: 768px)" srcset="img/banner/business_1440x300.png" >
+                <img src="img/banner/business_414x160.png" alt="" loading="eager">
+            </picture>
+        </div>
+        <!-- banner END -->
+
+        <!-- 麵包屑 START -->
+        <div class="breadcrumb">
+            <div class="breadcrumb__wrapper">
+                <li><a href="/">首頁</a></li>
+                <li>業務簡介</li>
+                <li class="current">試算器</li>
+            </div>
+        </div>
+        <!-- 麵包屑 END -->
+
+        <!-- 主要內容 START -->
+        <main class="pg calculator">
+            <div class="container">
+                <!-- <h1 class="pg_title">試算器</h1> -->
+                <div class="select_box d-lg-none">
+                    <select class="location_select" data-target="calculator">
+                        <option value="0">初級市場發行試算器</option>
+                        <option value="1">次級票券買入試算器</option>
+                        <option value="2">債券RP買入試算器</option>
+                    </select>
+                </div>
+                <div class="d-flex">
+                    <!-- 頁籤 START -->
+                    <div class="mr-4 d-none d-lg-block ">
+                        <div class="tab_list vertical" data-target="calculator">
+                            <div class="tab_list__wrapper">
+                                <div class="tab" data-val="0">
+                                    <div class="hover_box">
+                                        <div>初級市場發行試算器</div> 
+                                    </div>
+                                </div>
+                                <div class="tab" data-val="1">
+                                    <div class="hover_box">
+                                        <div>次級票券買入試算器</div> 
+                                    </div>
+                                </div>
+                                <div class="tab" data-val="2">
+                                    <div class="hover_box">
+                                        <div>債券RP買入試算器</div> 
+                                    </div>
+                                </div>
+                                <div class="shift_box"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 頁籤 END -->
+                    <!-- 頁籤內容 START -->
+                    <!-- 20220525 Alvin 修改START -->
+                    <div class="tab_list__target" data-name="calculator">
+                        <!-- 初級市場發行試算器 START -->
+                        <div data-val="0" class="d-show">
+                            <h2 class="pg_sub_title">初級市場發行試算器</h2>
+                            <div class="container w-100">
+                                <div class="row">
+                                    <!-- 左半 -->
+                                    <div class="col-sm-6 ">
+                                        <form class="form_group _left">
+                                            <label class="input_title release" for="release">發行日</label>
+                                            <div class="input-group mb-3">
+                                                <input id="release" type="text" class="form-control" placeholder="請選擇日期" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                <span class="input-group-text" >星期</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title expiry" for="expiry">到期日</label>
+                                            <div class="input-group mb-3">
+                                                <input id="expiry" type="text" class="form-control" placeholder="請選擇日期" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                <span class="input-group-text" >星期</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title paper" for="issue_amount">發行金額</label>
+                                            <div class="input-group mb-3">
+                                                <input id="issue_amount" type="text" class="form-control" placeholder="請輸入發行金額" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">元</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title percentage" for="guaranteed_rate">保證費率</label>
+                                            <div class="input-group mb-3">
+                                                <input id="guaranteed_rate" type="text" class="form-control" placeholder="請輸入保證費率" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text" >％</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title percentage" for="underwriting_rate">承銷費率</label>
+                                            <div class="input-group mb-3">
+                                                <input id="underwriting_rate" type="text" class="form-control" placeholder="請輸入承銷費率" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text" >％</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title percentage" for="discount_rate">貼現率</label>
+                                            <div class="input-group mb-3">
+                                                <input id="discount_rate" type="text" class="form-control" placeholder="請輸入貼現率" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text" >％</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title percentage" for="service＿fee">集保交割服務費率</label>
+                                            <div class="input-group mb-3">
+                                                <input id="service＿fee" type="text" class="form-control" placeholder="請輸入集保交割服務費率" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text" >％</span>
+                                                </div>
+                                            </div>
+                                            <button class="linear_btn" type="submit">
+                                                <p>計算</p>
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <!-- 右半 -->
+                                    <div class="col-sm-6 ">
+                                        <div class="form_group _right">
+                                            <label class="input_title issue">發行天數</label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="" value="" disabled="disabled">
+                                                <div class="input-group-append">
+                                                  <span class="input-group-text" >天</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title coin">每萬元價格</label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="" value="" disabled="disabled">
+                                                <div class="input-group-append">
+                                                  <span class="input-group-text">元</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title coin">貼現息</label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="" value="" disabled="disabled">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text" >元</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title coin">保證費</label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="" value="" disabled="disabled">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text" >元</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title coin">承銷費</label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="" value="" disabled="disabled">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text" >元</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title coin" for="discount_rate">集保交割服務費</label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="" value="" disabled="disabled" >
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text" >元</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title coin">總費用（含代收集保交割服務費）</label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="" value="" disabled="disabled">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text" >元</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title coin">實撥金額</label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="" value="" disabled="disabled">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text" >元</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="contact_info">以上業務聯絡資訊請至<a href="/location.html">服務據點</a>查詢</p>
+                            </div>
+                        </div>
+                        <!-- 初級市場發行試算器 END -->
+                        <!-- 次級票券買入試算器 START -->
+                        <div data-val="1">
+                            <h2 class="pg_sub_title">次級票券買入試算器</h2>
+                            <div class="container w-100">
+                                <div class="row">
+                                    <!-- 左半 -->
+                                    <div class="col-sm-6 ">
+                                        <form class="form_group _left">
+                                            <label class="input_title release" for="release2">發行日</label>
+                                            <div class="input-group mb-3">
+                                                <input id="release2" type="text" class="form-control" placeholder="請選擇日期" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                <span class="input-group-text" >星期</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title expiry" for="expiry2">到期日</label>
+                                            <div class="input-group mb-3">
+                                                <input id="expiry2" type="text" class="form-control" placeholder="請選擇日期" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                <span class="input-group-text" >星期</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title paper" for="issue_amount2">承作本金</label>
+                                            <div class="input-group mb-3">
+                                                <input id="issue_amount2" type="text" class="form-control" placeholder="請輸入承作本金" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">元</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title percentage" for="guaranteed_rate2">交易利率</label>
+                                            <div class="input-group mb-3">
+                                                <input id="guaranteed_rate2" type="text" class="form-control" placeholder="請輸入交易利率" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text" >％</span>
+                                                </div>
+                                            </div>
+                                            <button class="linear_btn" type="submit">
+                                                <p>計算</p>
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <!-- 右半 -->
+                                    <div class="col-sm-6 ">
+                                        <div class="form_group _right">
+                                            <label class="input_title issue">交易天數</label>
+                                            <div class="input-group mb-3">
+                                                <input id="" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="" value="" disabled="disabled">
+                                                <div class="input-group-append">
+                                                  <span class="input-group-text" >天</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title coin">交易利息</label>
+                                            <div class="input-group mb-3">
+                                                <input id="" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="" value="" disabled="disabled">
+                                                <div class="input-group-append">
+                                                  <span class="input-group-text" >元</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title coin">扣繳稅款</label>
+                                            <div class="input-group mb-3">
+                                                <input id="" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="" value="" disabled="disabled">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text" >元</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title coin">到期實得金額</label>
+                                            <div class="input-group mb-3">
+                                                <input id="" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="" value="" disabled="disabled">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text" >元</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="contact_info">以上業務聯絡資訊請至<a href="/location.html">服務據點</a>查詢</p>
+                            </div>
+                        </div>
+                        <!-- 次級票券買入試算器 END -->
+                        <!-- 債券RP買入試算器 START -->
+                        <div data-val="2">
+                            <h2 class="pg_sub_title">債券RP買入試算器</h2>
+                            <div class="container w-100">
+                                <div class="row">
+                                    <!-- 左半 -->
+                                    <div class="col-sm-6 ">
+                                        <form class="form_group _left">
+                                            <label class="input_title release" for="release3">發行日</label>
+                                            <div class="input-group mb-3">
+                                                <input id="release3" type="text" class="form-control" placeholder="請選擇日期" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                <span class="input-group-text" >星期</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title expiry" for="expiry3">到期日</label>
+                                            <div class="input-group mb-3">
+                                                <input id="expiry3" type="text" class="form-control" placeholder="請選擇日期" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                <span class="input-group-text" >星期</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title paper" for="issue_amount3">承作本金</label>
+                                            <div class="input-group mb-3">
+                                                <input id="issue_amount3" type="text" class="form-control" placeholder="請輸入承作本金" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">元</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title percentage" for="guaranteed_rate3">交易利率</label>
+                                            <div class="input-group mb-3">
+                                                <input id="guaranteed_rate3" type="text" class="form-control" placeholder="請輸入交易利率" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text" >％</span>
+                                                </div>
+                                            </div>
+                                            <button class="linear_btn" type="submit">
+                                                <p>計算</p>
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <!-- 右半 -->
+                                    <div class="col-sm-6 ">
+                                        <div class="form_group _right">
+                                            <label class="input_title issue">交易天數</label>
+                                            <div class="input-group mb-3">
+                                                <input id="" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="" value="" disabled="disabled">
+                                                <div class="input-group-append">
+                                                  <span class="input-group-text" >天</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title coin">交易利息</label>
+                                            <div class="input-group mb-3">
+                                                <input id="" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="" value="" disabled="disabled">
+                                                <div class="input-group-append">
+                                                  <span class="input-group-text" >元</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title coin">扣繳稅款</label>
+                                            <div class="input-group mb-3">
+                                                <input id="" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="" value="" disabled="disabled">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text" >元</span>
+                                                </div>
+                                            </div>
+                                            <label class="input_title coin">到期實得金額</label>
+                                            <div class="input-group mb-3">
+                                                <input id="" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="" value="" disabled="disabled">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text" >元</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="contact_info">以上業務聯絡資訊請至<a href="/location.html">服務據點</a>查詢</p>
+                            </div>
+                        </div>
+                        <!-- 債券RP買入試算器 END -->
+                    </div>
+                    <!-- 20220525 Alvin 修改END -->
+                    <!-- 頁籤內容 END -->
+                </div>
+            </div>
+        </main>
+        <!-- 主要內容 END -->
+
+        <!-- footer START (內頁) -->
+        <footer>
+            <div class="head">
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/MegaLogo.png" alt="">
+                    </a>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="body row justify-content-between">
+                <div class="col-lg-6 col-xl-5 mb-3 ">
+                    <div class="row contact">
+                        <div class="col-md-5 mb-3"><p>電話：<a href="tel:+886-02-2383-1616" class="d-inline-block">02-2383-1616</a></p></div>
+                        <div class="col-md-7 mb-3"><p>Email：<a href="mailto:service@megabills.com.tw" class="d-inline-block">service@megabills.com.tw</a></p></div>
+                        <div class="col-md-5 mb-3"><p>傳真：02-2382-2878</p></div>
+                        <div class="col-md-7 mb-3"><p>地址：台北市衡陽路91號2至5樓</p></div>
+                    </div>
+                </div>
+                <div class="col-sm-11 col-lg-6 mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-lg-3">
+                            <h3 class="title">兆豐事業群</h3>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row no-gutters">
+                                <div class="link_s mb-3"><a href="https://www.megaholdings.com.tw/tc/index.aspx" target="_blank">兆豐金控</a></div>
+                                <div class="link_s mb-3"><a href="https://www.megabank.com.tw/personal" target="_blank">兆豐銀行</a></div>
+                                <div class="link_s mb-3"><a href="https://www.megafunds.com.tw/iitweb/messageform.aspx" target="_blank">兆豐投信</a></div>
+                                <div class="link_m mb-3"><a href="https://www.megacharity.org.tw/" target="_blank">兆豐慈善基金會</a></div>
+                                <div class="link_s mb-3"><a href="https://www.cki.com.tw/" target="_blank">兆豐保險</a></div>
+                                <div class="link_s mb-3"><a href="https://www.emega.com.tw/" target="_blank">兆豐證券</a></div>
+                                <div class="link_s mb-3"><a href="https://www.megaamc.com.tw/tc/index.aspx" target="_blank">兆豐資產</a></div>
+                                <div class="link_m mb-3"><a href="https://www.megafoundation.org.tw/" target="_blank">兆豐文教基金會</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-1 p-xl-0">
+                    <h3 class="title"><a href="/#related_web">資訊網連結</a> </h3>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright 2022 Mega Bills All rights reserved</p>
+            </div>
+        </footer>
+        <!-- footer END -->
+
+        <div class="overlay"></div>
+    </div>
+    <!-- wrapper END -->
+
+  
+    <!-- jquery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- select2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- 共用js -->
+    <script src="js/common.js"></script>
+    <script>
+        $(function() {
+            let tabTarget                                                       //儲存當前互動tablist名稱
+            let selectInput = $('.location_select').select2({width : "100%", minimumResultsForSearch: Infinity});  // 呼叫select2
+            $(`.tab_list__target [data-val=0]`).fadeIn(700)
+
+            // 垂直頁籤功能
+            $(".tab_list.vertical").on("click",".tab", function(e) {
+                let tabNum = $(this).attr("data-val")                           //抓取被點擊的值
+                $(selectInput).val(`${tabNum}`).trigger("change");              //改變select值，觸發onchange(下方)
+            })
+            
+            $(selectInput).on("change", function(e){
+                $(`.location_select option:selected`).each(function() {
+                    tabTarget = $(this).parent("select").attr("data-target")
+                    let tabNum = $(this).val()                                  //選中的排序數字 1~n
+                    let tabsLength = $(".tab_list.vertical .tab_list__wrapper").children(".tab").length;  //tablist子元素數量
+                
+                    //「選中子元素排序位置」乘上「100/頁籤子元素總數量」，改變選中樣式的定位
+                    //例如總共四個子元素，點到第3個：
+                    //3*(100/4) == 3*25 == 75 >>>>> 選中樣式移至母元素75%高度位置
+                    $(`.tab_list.vertical .shift_box`).css("top", `${tabNum*(100/tabsLength)}%`)     
+                    
+                    $(`[data-name=${tabTarget}]`).children().hide()     //隱藏所有區塊
+                    $(`[data-name=${tabTarget}]`).children(`div[data-val=${tabNum}]`).fadeIn(700)   //顯示選中區塊
+                })
+            })
+        }) 
+    </script>
+</body>
+</html>

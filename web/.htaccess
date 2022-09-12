@@ -1,0 +1,22 @@
+Options +SymLinksIfOwnerMatch
+
+<Files *>
+    Options -Indexes
+</Files>
+
+<Files .htaccess>
+	order allow,deny
+	deny from all
+</Files>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    #RewriteCond %{HTTPS} off
+    #RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule . index.php [L]
+
+    #ErrorDocument 404 http://localhost:8092/src/404.php
+</IfModule>

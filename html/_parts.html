@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <!-- IE -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 取消 safari 電話連結 -->
+    <meta name="format-detection" content="telephone=no">
+
+    <title>兆豐票券</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+   
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- select2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+</head>
+<style>
+    .container {
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 15px;
+        border: 1px solid gray;
+    }
+    .pt_name {
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 191, 166);
+        text-align: center;
+        padding: 4px;
+    }
+</style>
+<body>
+
+    <!-- wrapper start -->
+    <div class="wrapper">
+        <!-- header start -->
+        <header>
+            <div class="logo">
+                <a href="/">
+                    <img src="img/MegaLogo.png" alt="">
+                </a>
+            </div>
+            <div class="nav_wrap">
+                <ul class="nav_list">
+                    <li class="nav_list__item">
+                        關於我們
+                            <ul class="sub_list">
+                                <li class="sub_list__item"><a href="">關於兆票</a></li>
+                                <li class="sub_list__item"><a href="">服務據點</a></li>
+                                <li class="sub_list__item"><a href="">人才招募</a></li>
+                            </ul>
+      
+                    </li>
+                    <li class="nav_list__item">
+                        動態消息
+                        <ul class="sub_list">
+                            <li class="sub_list__item"><a href="">市場行情</a></li>
+                            <li class="sub_list__item"><a href="">公司訊息</a></li>
+                            <li class="sub_list__item"><a href="">政策宣導</a></li>
+                            <li class="sub_list__item"><a href="">友善連結</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_list__item">
+                        牌告利率
+                        <ul class="sub_list">
+                            <li class="sub_list__item"><a href="">新台幣利率報價</a></li>
+                            <li class="sub_list__item"><a href="">外幣利率報價</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_list__item">
+                        金融情勢
+                        <ul class="sub_list">
+                            <li class="sub_list__item"><a href="">資金情勢研判</a></li>
+                            <li class="sub_list__item"><a href="">金融資訊</a></li>
+                            <li class="sub_list__item"><a href="">貨幣市場小百科</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_list__item">
+                        業務簡介
+                        <ul class="sub_list">
+                            <li class="sub_list__item"><a href="">交易工具介紹</a></li>
+                            <li class="sub_list__item"><a href="">票券及債券買賣</a></li>
+                            <li class="sub_list__item"><a href="">發行融資性商業本票</a></li>
+                            <li class="sub_list__item"><a href="">買入發行銀行承兌匯票及商業承兌匯票</a></li>
+                            <li class="sub_list__item"><a href="">買入中心工廠票券交易性商業本票</a></li>
+                            <li class="sub_list__item"><a href="">投資外幣票券及債券</a></li>
+                            <li class="sub_list__item"><a href="">試算器</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_list__item">
+                        法定公開揭露
+                        <ul class="sub_list">
+                            <li class="sub_list__item"><a href="">公司治理</a></li>
+                            <li class="sub_list__item"><a href="">財務報告</a></li>
+                            <li class="sub_list__item"><a href="">年報</a></li>
+                            <li class="sub_list__item"><a href="">信用評等資訊</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_list__item">
+                        永續發展
+                        <ul class="sub_list">
+                            <li class="sub_list__item"><a href="">政策及規範</a></li>
+                            <li class="sub_list__item"><a href="">年度執行情形</a></li>
+                            <li class="sub_list__item"><a href="">機構投資人盡職治理</a></li>
+                            <li class="sub_list__item"><a href="">利害關係人溝通</a></li>
+                            <li class="sub_list__item"><a href="">報告書</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="lang">
+                <a href="/aboutus.html">
+                    EN
+                </a>
+            </div>
+            <div class="header_right_m">
+         <div class="lang_m">
+                    <a href="/aboutus.html">
+                        English
+                    </a>
+                </div>
+                <div class="hamburger">
+                    <div class="burger burger-squeeze">
+                        <div class="burger-lines"></div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!-- header end -->
+        <div class="sub_nav">
+            <ul class="nav_list">
+                <li class="nav_list__item">
+                    <p>關於我們</p>
+                        <ul class="sub_list">
+                            <li class="sub_list__item"><a href="">關於兆票</a></li>
+                            <li class="sub_list__item"><a href="">服務據點</a></li>
+                            <li class="sub_list__item"><a href="">人才招募</a></li>
+                        </ul>
+  
+                </li>
+                <li class="nav_list__item">
+                    <p>動態消息</p> 
+                    <ul class="sub_list">
+                        <li class="sub_list__item"><a href="">市場行情</a></li>
+                        <li class="sub_list__item"><a href="">公司訊息</a></li>
+                        <li class="sub_list__item"><a href="">政策宣導</a></li>
+                        <li class="sub_list__item"><a href="">友善連結</a></li>
+                    </ul>
+                </li>
+                <li class="nav_list__item">
+                    <p>牌告利率</p> 
+                    <ul class="sub_list">
+                        <li class="sub_list__item"><a href="">新台幣利率報價</a></li>
+                        <li class="sub_list__item"><a href="">外幣利率報價</a></li>
+                    </ul>
+                </li>
+                <li class="nav_list__item">
+                    <p>金融情勢</p>  
+                    <ul class="sub_list">
+                        <li class="sub_list__item"><a href="">資金情勢研判</a></li>
+                        <li class="sub_list__item"><a href="">金融資訊</a></li>
+                        <li class="sub_list__item"><a href="">貨幣市場小百科</a></li>
+                    </ul>
+                </li>
+                <li class="nav_list__item">
+                    <p>業務簡介</p>  
+                    <ul class="sub_list">
+                        <li class="sub_list__item"><a href="">交易工具介紹</a></li>
+                        <li class="sub_list__item"><a href="">票券及債券買賣</a></li>
+                        <li class="sub_list__item"><a href="">發行融資性商業本票</a></li>
+                        <li class="sub_list__item"><a href="">買入發行銀行承兌匯票及商業承兌匯票</a></li>
+                        <li class="sub_list__item"><a href="">買入中心工廠票券交易性商業本票</a></li>
+                        <li class="sub_list__item"><a href="">投資外幣票券及債券</a></li>
+                        <li class="sub_list__item"><a href="">試算器</a></li>
+                    </ul>
+                </li>
+                <li class="nav_list__item">
+                    <p>法定公開揭露</p>  
+                    <ul class="sub_list">
+                        <li class="sub_list__item"><a href="">公司治理</a></li>
+                        <li class="sub_list__item"><a href="">財務報告</a></li>
+                        <li class="sub_list__item"><a href="">年報</a></li>
+                        <li class="sub_list__item"><a href="">信用評等資訊</a></li>
+                    </ul>
+                </li>
+                <li class="nav_list__item">
+                    <p>永續發展</p>   
+                    <ul class="sub_list">
+                        <li class="sub_list__item"><a href="">政策及規範</a></li>
+                        <li class="sub_list__item"><a href="">年度執行情形</a></li>
+                        <li class="sub_list__item"><a href="">機構投資人盡職治理</a></li>
+                        <li class="sub_list__item"><a href="">利害關係人溝通</a></li>
+                        <li class="sub_list__item"><a href="">報告書</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- 主要內容 start -->
+        <main class="pg_main">
+            <div class="pg_banner">
+                <p>關於我們</p>
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/banner/news_1440x300.png" >
+                    <img src="img/banner/news_414x160.png" alt="" loading="eager">
+                </picture>
+            </div>
+            <div class="pg_banner _s" id="scene">
+                <p>關於我們</p>
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/banner/news_1440x160.png" >
+                    <img src="img/banner/news_414x160.png" alt="" loading="eager">
+                </picture>
+            </div>
+            
+            <!-- 麵包屑 -->
+            <h4 class="pt_name">麵包屑</h4>
+            <nav class="breadcrumb">
+                <ul class="breadcrumb__wrapper">
+                    <li><a href="/">首頁</a></li>
+                    <li>動態消息</li>
+                    <li class="current">市場行情</li>
+                </ul>
+            </nav>
+            <nav class="breadcrumb">
+                <ul class="breadcrumb__wrapper">
+                    <li><a href="/">首頁</a></li>
+                    <li>動態消息</li>
+                    <li><a href="/list">市場行情</a></li>
+                    <li class="current">本公司榮獲第十屆菁業獎「最佳票券金融獎」優等。</li>
+                </ul>
+            </nav>
+
+            <section>
+                <!-- 頁面標題 -->
+                <h4 class="pt_name">頁面標題</h4>
+                <div class="container">
+                    <h1 class="pg_title">動態消息</h1>
+                </div>
+                
+                <!-- 頁面副標題 -->
+                <h4 class="pt_name">頁面副標題</h4>
+                <div class="container">
+                    <h2 class="pg_sub_title">動態消息</h2>
+                </div>
+                
+                <!-- 搜尋input -->
+                <h4 class="pt_name">搜尋input</h4>
+                <div class="container">
+                    <div class="input_box">
+                        <input type="text" placeholder="請輸入關鍵字搜尋" class="input-group">
+                        <div  class="linear_btn">
+                            <a href="#">搜尋</a>
+                        </div>
+                    </div>
+                </div>
+ 
+
+                <!-- select -->
+                <h4 class="pt_name">select</h4>
+                <div class="container">
+                    <div class="select_box">
+                        <select class="location_select" data-target="news">
+                            <option value="0">總公司</option>
+                            <option value="1">台北分公司</option>
+                            <option value="2">三重分公司</option>
+                            <option value="3">板橋分公司</option>
+                            <option value="4">新竹分公司</option>
+                            <option value="5">桃園分公司</option>
+                            <option value="6">台中分公司</option>
+                            <option value="7">台南分公司</option>
+                            <option value="8">高雄分公司</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+                <!-- 裝飾列表-標題 -->
+                <h4 class="pt_name">裝飾列表-標題(超連結)</h4>
+                <div class="container">
+                    <ul class="decor_lists__t">
+                        <li><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                        <li><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                        <li><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                    </ul>
+                </div>
+                
+                <!-- 裝飾列表-日期+標題 -->
+                <h4 class="pt_name">裝飾列表-日期+標題(超連結)</h4>
+                <div class="container">
+                    <ul class="decor_lists__d_t">
+                        <li><span>2021/03/29</span><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                        <li><span>2021/03/29</span><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                        <li><span>2021/03/29</span><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                    </ul>
+                </div>
+                
+                <!-- 裝飾列表-日期+標題+內容 -->
+                <h4 class="pt_name">裝飾列表-日期+標題+內容</h4>
+                <div class="container">
+                    <ul class="decor_lists__d_t_c">
+                        <li>
+                            <h3><span>2021/03/29</span>央行動態</h3>
+                            <p>上一交易日（3/28）央行NCD到期193.5億，實際發行7天及28天期存單各為133.5億及121億元，總金額為254.5億。 </p>
+                        </li>
+                        <li>
+                            <h3><span>2021/03/29</span>拆款行情</h3>
+                            <p>上一交易日（3/28）拆款市場平均利率為0.182%，拆款金額為504億元。 </p>
+                        </li>
+                        <li>
+                            <h3><span>2021/03/29</span>匯市行情</h3>
+                            <p>上一交易日（3/28）新台幣兌美元以28.755作收，外匯總成交量為22.01億元。 </p>
+                        </li>
+                        <li>
+                            <h3><span>2021/03/29</span>債券行情</h3>
+                            <p>臺灣10年期指標債111央債甲7前一營業日(3/29)成交在1.01%，較前一營業日上升6bps。</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- 裝飾列表-日期+內容 -->
+                <h4 class="pt_name">裝飾列表-日期+內容</h4>
+                <div class="container">
+                    <ul class="decor_lists__d_c">
+                        <li>
+                            <span>2021/03/29</span>
+                            <p>上一交易日（3/28）央行NCD到期193.5億，實際發行7天及28天期存單各為133.5億及121億元，總金額為254.5億。 </p>
+                        </li>
+                        <li>
+                            <span>2021/03/29</span>
+                            <p>上一交易日（3/28）拆款市場平均利率為0.182%，拆款金額為504億元。 </p>
+                        </li>
+                        <li>
+                            <span>2021/03/29</span>
+                            <p>上一交易日（3/28）新台幣兌美元以28.755作收，外匯總成交量為22.01億元。 </p>
+                        </li>
+                        <li>
+                            <span>2021/03/29</span>
+                            <p>臺灣10年期指標債111央債甲7前一營業日(3/29)成交在1.01%，較前一營業日上升6bps。</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- 瞭解更多按鈕 -->
+                <h4 class="pt_name">瞭解更多按鈕</h4>
+                <div class="container">
+                    <!-- 小 -->
+                    <div class="linear_btn -s">
+                        <a href="#">瞭解更多</a>
+                    </div>
+                    <!-- 大 -->
+                    <div  class="linear_btn">
+                        <a href="#">瞭解更多</a>
+                    </div>
+                </div>
+                
+                <!-- 頁籤 -->
+                <h4 class="pt_name">頁籤</h4>
+                <div class="container">
+                    <!-- 水平 -->
+                    <div class="tab_list horizon" data-target="news">
+                        <div class="tab_list__wrapper">
+                            <div class="tab" data-num="0">
+                                <div class="hover_box">
+                                    <div>市場行情</div> 
+                                </div>
+                            </div>
+                            <div class="tab" data-num="1">
+                                <div class="hover_box">
+                                    <div>公司訊息</div> 
+                                </div>
+                            </div>
+                            <div class="tab" data-num="2">
+                                <div class="hover_box">
+                                    <div>政策宣導</div> 
+                                </div>
+                            </div>
+                            <div class="tab" data-num="3">
+                                <div class="hover_box">
+                                    <div>友善連結</div> 
+                                </div>
+                            </div>
+                            <div class="shift_box"></div>
+                        </div>
+                    </div>
+                     <!-- 垂直 -->
+                    <div class="tab_list vertical" data-target="news">
+                        <div class="tab_list__wrapper">
+                            <div class="tab" data-num="0">
+                                <div class="hover_box">
+                                    <div>市場行情</div> 
+                                </div>
+                            </div>
+                            <div class="tab" data-num="1">
+                                <div class="hover_box">
+                                    <div>公司訊息</div> 
+                                </div>
+                            </div>
+                            <div class="tab" data-num="2">
+                                <div class="hover_box">
+                                    <div>政策宣導</div> 
+                                </div>
+                            </div>
+                            <div class="tab" data-num="3">
+                                <div class="hover_box">
+                                    <div>友善連結</div> 
+                                </div>
+                            </div>
+                            <div class="shift_box"></div>
+                        </div>
+                    </div>
+                    <div class="tab_list__target" data-name="news">
+                        <div data-num="0" class="d-show">
+                            <ul class="decor_lists__d_t_c">
+                                <li>
+                                    <h3><span>2021/03/29</span>央行動態</h3>
+                                    <p>上一交易日（3/28）央行NCD到期193.5億，實際發行7天及28天期存單各為133.5億及121億元，總金額為254.5億。 </p>
+                                </li>
+                                <li>
+                                    <h3><span>2021/03/29</span>拆款行情</h3>
+                                    <p>上一交易日（3/28）拆款市場平均利率為0.182%，拆款金額為504億元。 </p>
+                                </li>
+                                <li>
+                                    <h3><span>2021/03/29</span>匯市行情</h3>
+                                    <p>上一交易日（3/28）新台幣兌美元以28.755作收，外匯總成交量為22.01億元。 </p>
+                                </li>
+                                <li>
+                                    <h3><span>2021/03/29</span>債券行情</h3>
+                                    <p>臺灣10年期指標債111央債甲7前一營業日(3/29)成交在1.01%，較前一營業日上升6bps。</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div data-num="1">
+                            <ul class="decor_lists__d_t">
+                                <li><span>2021/03/29</span><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                                <li><span>2021/03/29</span><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                                <li><span>2021/03/29</span><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                            </ul>
+                        </div>
+                        <div data-num="2">
+                            <ul class="decor_lists__d_t">
+                                <li><span>2021/03/29</span><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                                <li><span>2021/03/29</span><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                                <li><span>2021/03/29</span><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                            </ul>
+                        </div>
+                        <div data-num="3">
+                            <ul class="decor_lists__t">
+                                <li><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                                <li><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                                <li><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 垂直開合頁籤 -->
+                <h4 class="pt_name">垂直開合頁籤</h4>
+                <div class="container">
+                    <div class="tab_list _v_collapse" data-target="news">
+                        <ul class="tab_list__wrapper">
+                            <li class="tab active" data-num="0">
+                                <div class="hover_box">
+                                    <div>市場行情</div> 
+                                </div>
+                                <ul class="sub_tab_list">
+                                    <li class="sub_tab" data-num="0"><div>1</div></li>
+                                    <li class="sub_tab" data-num="1"><div>2</div></li>
+                                    <li class="sub_tab" data-num="2"><div>3</div></li>
+                                    <li class="sub_tab" data-num="3"><div>4</div></li>
+                                </ul>
+                            </li>
+                            <li class="tab" data-num="1">
+                                <div class="hover_box">
+                                    <div>公司訊息</div> 
+                                </div>
+                                <ul class="sub_tab_list">
+                                    <li class="sub_tab" data-num="0"><div>1</div></li>
+                                    <li class="sub_tab" data-num="1"><div>2</div></li>
+                                    <li class="sub_tab" data-num="2"><div>3</div></li>
+                                    <li class="sub_tab" data-num="3"><div>4</div></li>
+                                </ul>
+                            </li>
+                            <li class="tab" data-num="2">
+                                <div class="hover_box">
+                                    <div>政策宣導</div> 
+                                </div>
+                            </li>
+                            <li class="tab" data-num="3">
+                                <div class="hover_box">
+                                    <div>友善連結</div> 
+                                </div>
+                            </li>
+                            <div class="shift_box"></div>
+                        </ul>
+                    </div>
+                    <div class="tab_list__target" data-name="news">
+                        <div data-num="0" class="d-show">
+                            <ul class="decor_lists__d_t_c">
+                                <li>
+                                    <h3><span>2021/03/29</span>央行動態</h3>
+                                    <p>上一交易日（3/28）央行NCD到期193.5億，實際發行7天及28天期存單各為133.5億及121億元，總金額為254.5億。 </p>
+                                </li>
+                                <li>
+                                    <h3><span>2021/03/29</span>拆款行情</h3>
+                                    <p>上一交易日（3/28）拆款市場平均利率為0.182%，拆款金額為504億元。 </p>
+                                </li>
+                                <li>
+                                    <h3><span>2021/03/29</span>匯市行情</h3>
+                                    <p>上一交易日（3/28）新台幣兌美元以28.755作收，外匯總成交量為22.01億元。 </p>
+                                </li>
+                                <li>
+                                    <h3><span>2021/03/29</span>債券行情</h3>
+                                    <p>臺灣10年期指標債111央債甲7前一營業日(3/29)成交在1.01%，較前一營業日上升6bps。</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div data-num="1">
+                            <ul class="decor_lists__d_t">
+                                <li><span>2021/03/29</span><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                                <li><span>2021/03/29</span><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                                <li><span>2021/03/29</span><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                            </ul>
+                        </div>
+                        <div data-num="2">
+                            <ul class="decor_lists__d_t">
+                                <li><span>2021/03/29</span><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                                <li><span>2021/03/29</span><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                                <li><span>2021/03/29</span><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                            </ul>
+                        </div>
+                        <div data-num="3">
+                            <ul class="decor_lists__t">
+                                <li><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                                <li><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                                <li><a href="#">兆豐金融控股公司及其子公司客戶資料保密措施</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+           
+                <!-- 頁碼 -->
+                <h4 class="pt_name">頁碼</h4>
+                <div class="container">
+                    <ul class="pgs_list">
+                        <li><a href=""><img src="img/icon/angle_left.png" alt=""></a></li>
+                        <li><a href="">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li class="current"><a href="">3</a></li>
+                        <li><a href="">4</a></li>
+                        ...
+                        <li><a href="">11</a></li>
+                        <li><a href=""><img src="img/icon/angle_right.png" alt=""></a></li>
+                    </ul>
+                </div>
+                
+                <!-- 卡片模組 -->
+                <h4 class="pt_name">純標題卡片</h4>
+                <div class="container">
+                    <div class="card_module">
+                        <div class="title">
+                            <h3>貨幣市場架構（The Framework of The Money Market）</h3>
+                        </div>
+                    </div>
+                    <div class="card_module">
+                        <div class="title">
+                            <h3>貨幣市場架構（The Framework of The Money Market）</h3>
+                        </div>
+                        <div class="content">
+                            <p>幣市場為短期資金供需之交易場所，交易工具為一年期以下短期有價證券，亦包括金融業拆款市場。而資本市場係指一年期以上或未定期（如股票）之有價證券交易之公開場所。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 卡片模組 - 開合（貨幣市場小百科） -->
+                <h4 class="pt_name">開合卡片（貨幣市場小百科）</h4>
+                <div class="container">
+                    <div class="card_module _collapse">
+                        <div class="title">
+                            <h3>貨幣市場架構（The Framework of The Money Market）</h3>
+                        </div>
+                        <div class="content">
+                            <p>幣市場為短期資金供需之交易場所，交易工具為一年期以下短期有價證券，亦包括金融業拆款市場。而資本市場係指一年期以上或未定期（如股票）之有價證券交易之公開場所。</p>
+                        </div>
+                    </div>
+                    <div class="card_module _collapse">
+                        <div class="title">
+                            <h3>貨幣市場架構（The Framework of The Money Market）</h3>
+                        </div>
+                        <div class="content">
+                            <p>幣市場為短期資金供需之交易場所，交易工具為一年期以下短期有價證券，亦包括金融業拆款市場。而資本市場係指一年期以上或未定期（如股票）之有價證券交易之公開場所。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 卡片模組 - 超連結 -->
+                <h4 class="pt_name">超連結卡片</h4>
+                <div class="container">
+                    <div class="card_module _anchor">
+                        <div class="title">
+                            <h3>貨幣市場架構（The Framework of The Money Market）</h3>
+                        </div>
+                        <div class="content">
+                            <a href="">董事會重大決議事項</a>
+                            <a href="">內部稽核組織及運作</a>
+                            <a href="">履行社會責任情形</a>
+                            <a href="">落實誠信經營情形</a>
+                            <a href="">公司治理主管</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 卡片模組 - 下載 -->
+                <h4 class="pt_name">超連結卡片</h4>
+                <div class="container">
+                    <div class="card_module _download">
+                        <a class="title" href="#">
+                            <h3>貨幣市場架構（The Framework of The Money Market）</h3>
+                        </a>
+                    </div>
+                    <div class="card_module _download">
+                        <a class="title" href="#"  download>
+                            <h3>貨幣市場架構（The Framework of The Money Market）</h3>
+                        </a>
+                    </div>
+                </div>
+
+      
+            </section>
+            <section class="related_web">
+                <!-- 卡片模組 - 下載 -->
+                <h4 class="pt_name">超連結卡片</h4>
+                <div class="container">
+                    <h1 class="pg_title">資訊網連結</h1>
+                    <div class="row">
+                        <div class="col-xl-10">
+                            <h3>政府與周邊機構</h3>
+                            <div class="row">
+                                <div class="col-6 col-lg-2">
+                                    <a href="" class="">財政部</a>
+                                    <a href="" class="">經濟部</a>
+                                    <a href="" class="">證交所</a>
+                                    <a href="" class="">中央銀行</a>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <a href="" class="">行政院主計處</a>
+                                    <a href="" class="">櫃檯買賣中心</a>
+                                    <a href="" class="">金管會銀行局</a>
+                                    <a href="" class="">金管會證期局</a>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <a href="" class="">中央存保公司</a>
+                                    <a href="" class="">國家發展委員會</a>
+                                    <a href="" class="">公開資訊觀測站</a>
+                                    <a href="" class="">台灣證券交易所</a>
+                                </div>
+                                <div class="col-sm-6 col-lg-4">
+                                    <a href="" class="">台灣集中保管結算所</a>
+                                    <a href="" class="">金融監督管理委員會</a>
+                                    <a href="" class="">行政院洗錢防制辦公室</a>
+                                    <a href="" class="">財政部關務署洗錢防制專區</a>
+                                    <a href="" class="">財團法人金融消費評議中心</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <h3>研究單位</h3> 
+                            <div>
+                                <a href="" class="">中央研究院</a>
+                                <a href="" class="">台灣金融研訓院</a>
+                                <a href="" class="">台灣經濟研究院</a>
+                                <a href="" class="">中華經濟研究院</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+        </main>
+        <!-- 主要內容 end -->
+
+
+    </div>
+    <!-- wrapper end -->
+
+
+    <!-- jquery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- select2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- slider -->
+    <script src="js/slick.js"></script>
+    <!-- 共用js -->
+    <script src="js/common.js"></script>
+    <script>
+    $(function() {
+        // header
+        $(".burger").on("click", function() {
+            console.log("123")
+            $(this).toggleClass("-open")
+            $(".sub_nav").toggleClass("-open")
+            $(".nav_list__item").removeClass("-open")
+        })
+
+        $(".nav_list__item ").on("click", function() {
+            $(this).toggleClass("-open")
+        })
+        $(window).resize(function() {
+            $(".burger").removeClass("on")
+            $(".sub_nav").removeClass("-open")
+            $(".nav_list__item").removeClass("-open")
+        })
+        // select2
+        let selectInput = $('.location_select').select2({width : "100%"}); 
+        
+        // 瞭解更多按鈕
+        $(".linear_btn").mousedown(function() {
+            $(this).css("background-image", "linear-gradient(-45deg, #95058d, #9a161c), linear-gradient(-45deg, #922D8D, #D7262E);")
+        })
+        // 水平頁籤
+        $(".tab_list.horizon").on("click",".tab", function(e) {
+            let tabNum = $(this).attr("data-num")   //目標索引 0 1 2 .....
+            let tabsLength = $(".tab_list.horizon .tab_list__wrapper").children(".tab").length;  //tablist子元素數量-裝飾shiftbox
+            let tabTarget = $(".tab_list.horizon").attr("data-target")  //頁籤總數量
+            $(`.tab_list.horizon .shift_box`).css("left", `${tabNum*(100/tabsLength)}%`)    //索引*(100/頁籤數量) == 目標位置
+            $(`[data-name=${tabTarget}]`).children().hide()
+            $(`[data-name=${tabTarget}]`).children(`div[data-num=${tabNum}]`).show()
+        })
+
+        // 垂直頁籤
+        $(".tab_list.vertical").on("click",".tab", function(e) {
+            let tabNum = $(this).attr("data-num")
+            let tabsLength = $(".tab_list.vertical .tab_list__wrapper").children(".tab").length;  //tablist子元素數量-裝飾shiftbox
+            let tabTarget = $(".tab_list.vertical").attr("data-target")
+            $(`.tab_list.vertical .shift_box`).css("top", `${tabNum*(100/tabsLength)}%`)
+            $(`[data-name=${tabTarget}]`).children().hide()
+            $(`[data-name=${tabTarget}]`).children(`div[data-num=${tabNum}]`).show()
+        })
+
+
+        // 開合頁籤
+        let shiftHeightDefault =  $(".tab_list._v_collapse .tab.active").height()
+        console.log(shiftHeightDefault)
+        $(".tab_list._v_collapse .shift_box").css("height", `${shiftHeightDefault}px` )
+        $(".tab_list._v_collapse").on("click",".tab", function(e) {
+            let tabNum = $(this).attr("data-num"),
+                tabTarget = $(".tab_list._v_collapse").attr("data-target"),
+                tabWrapperOffsetTop,
+                tabOffsetTop,
+                shiftHeight,
+                tapTop;
+            $(this).siblings(".active").removeClass("active")
+            $(this).addClass("active");
+
+            tabWrapperOffsetTop = $(this).parent().offset().top  //tabList位於document位置
+            tabOffsetTop = $(this).offset().top  //tab位於document位置
+            shiftHeight = $(this).height()
+            tapTop = tabOffsetTop - tabWrapperOffsetTop
+            $(`.tab_list._v_collapse .shift_box`).css("top", `${tapTop}px`)
+            $(`.tab_list._v_collapse .shift_box`).css("height", `${shiftHeight}`)
+        })
+
+        $(".tab_list._v_collapse").on("click",".sub_tab", function(e) {
+            let tabNum = $(this).attr("data-num")
+            let tabTarget = $(".tab_list._v_collapse").attr("data-target")
+                        
+            $(`[data-name=${tabTarget}]`).children().hide()
+            $(`[data-name=${tabTarget}]`).children(`div[data-num=${tabNum}]`).show()
+        })
+
+        // 開合內文（貨幣市場小百科）
+        $(".card_module._collapse").on("click", ".title", function() {
+            let maxHeight = $(this).siblings(".content").children().height()
+            if ($(this).siblings(".content").css("max-height") == "0px") {
+                $(this).siblings(".content").css("max-height",maxHeight+28);
+            }else {
+                $(this).siblings(".content").css("max-height",0);
+            }
+           
+            $(this).parent().toggleClass("open")
+        })
+    })
+
+    </script>
+
+</body>
+</html>
